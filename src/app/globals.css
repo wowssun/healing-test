@@ -14,8 +14,121 @@
   }
 }
 
-body {
+/* body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+} */
+
+body {
+  background-color: #ECEBE6;
+  color: #536851;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+article {
+  display: flex;
+  flex-direction: column;
+}
+.copyright-text {
+  font-family: "Noto Sans KR";
+  font-size: 12px;
+  color: #7e3f3f;
+}
+.start-cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn-start {
+  font-size: 25px;
+  color:#e8ebdf;
+  background-color: #f8ffe1;
+  border:#436e4e;
+}
+.btn-start, .btn-start:visited, .btn-start:hover, .btn-start:active {
+  font-size: 25px;
+  color:#e8ebdf;
+  background-color: #436e4e;
+  border:#436e4e;
+}
+.btn-start:active, .btn-start:focus {
+  background-color: #8fb482 !important;
+  border:#33633f !important;
+  font-size: 25px;
+  color:#ffffff;
+}
+.question {
+  display: none;
+}
+.btn-answer, .btn-answer:visited, .btn-answer:hover, .btn-answer:active, .btn-answer:focus {
+  background-color: #47644f;
+  border:#cbe9c8;
+  width: 288px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #ffffff;
+}
+.btn-answer:hover {
+  background-color: #c9e0d0 !important;
+  border:#cbe9c8 !important;
+  width: 288px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #ffffff;
+}
+.progress-bar {
+  background-color: #2e6d53;
+}
+.progress {
+  background-color: #b2e0b2;
+}
+.question-content {
+  font-size: 30px;
+  color: #1e4226;
+}
+.rectangle {
+  width: 288px;
+  height: 8px;
+  background-color: #536851;
+  margin: 0 auto;
+}
+.mid-rectangle {
+  width: 288px;
+  height: 1px;
+  background-color: #a5c0ae;
+  margin: 0 auto;
+}
+.result {
+  background-size:auto;
+  background-color: #536851;
+  display: none;
+}
+.share-message {
+  margin: 25px auto;
+  color:#ffffff;
+  font-size: 24px;
+  font-weight: 100;
+}
+#img {
+  width: 375px;
+  height:664px;
+  margin: 0 auto;
+}
+.share {
+  margin: 25px auto;
+}
+.kakao_ad {
+  width: 320px;
+  margin: 0 auto;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  margin: 0 auto;
+}
+.banner-img {
+  width: 300px;
+  height: 405.17px;
 }

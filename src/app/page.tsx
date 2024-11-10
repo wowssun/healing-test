@@ -2,100 +2,47 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    <>
+      <div className="container">
+        <article className="start">
+        <div style={{ textAlign: 'center' }}>
+          <img className="rounded mt-5 " src="/image/시작화면.png" alt="시작화면" width="375" height="664"/>
+      </div>
+          <div className="start-cover mt-3 mb-3">
+          <button type="button" className="btn-start btn btn-primary btn-lg btn-block" >START</button> {/* start function*/}
+          </div>
+      </article>
+      <article className="question">
+          <div className="progress mt-5">
+              <div className="progress-bar" role="progressbar" style={{ width: `calc(100/12*1%)` }}></div>
+          </div>
+          <h2 id="title" className="question-content text-center mt-5 mb-5">문제</h2>
+          <input id="type" type="hidden" value="EI"/>
+          <div className="rectangle mt-5"></div>
+          <button id="A" type="button" className="btn-answer btn btn-primary pt-5 pb-5">대답A</button>
+          <div className="mid-rectangle"></div>
+          <button id="B" type="button" className="btn-answer btn btn-primary pt-5 pb-5">대답B</button>
+          <div className="rectangle"></div>
+      </article>
+      <article className="result">
+          <span className="border"></span>
+          <img id="img" className=" mt-5" src="image/사자.png" alt="animal"/>
+          <span className="share-message mb-4">나의 휴식 메이트 <strong>공유하기</strong></span>
+                  {/* <!-- Go to www.addthis.com/dashboard to customize your tools --> */}
+                  <div className="share addthis_inline_share_toolbox"></div>
+      </article>
+      <article>
+          <span className="mt-2 text-center copyright-text">ⓒ _wow_ssun ⓒ Getty Images Bank_@ color_life</span>
+          <ins className="kakao_ad_area" style={{display: 'none'}} 
+          data-ad-unit    = "DAN-2sAPQXHIQjQT7E0T" 
+          data-ad-width   = "320" 
+          data-ad-height  = "100"></ins> 
+      </article>
+      <input type="hidden" id="EI" value="0"/>
+      <input type="hidden" id="SN" value="0"/>
+      <input type="hidden" id="TF" value="0"/>
+      <input type="hidden" id="JP" value="0"/>
+      </div>
+    </>
   );
 }
